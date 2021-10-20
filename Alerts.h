@@ -28,7 +28,7 @@ class StatsAlerter
     /*member functions*/
     StatsAlerter(float thresholdValue, std::vector<IAlerter*> alerters);
     ~StatsAlerter();
-    checkAndAlert(std::vector<float>& values);
+    checkAndAlert(const std::vector<float>& values);
     
   private:
     /*member variables*/
