@@ -4,7 +4,7 @@ class IAlerter
   public:
   IAlerter();
   ~IAlerter();
-}
+};
 
 class EmailAlert : public IAlerter
 {
@@ -12,7 +12,7 @@ class EmailAlert : public IAlerter
   EmailAlert();
   ~EmailAlert();
   bool emailSent;
-}
+};
 
 class LEDAlert : public IAlerter
 {
@@ -20,7 +20,7 @@ class LEDAlert : public IAlerter
     LEDAlert();
     ~LEDAlert();
     bool ledGlows;
-}
+};
 
 class StatsAlerter 
 {
@@ -34,4 +34,4 @@ class StatsAlerter
     /*member variables*/
     float threshold;
     std::vector<IAlerter*> alerts;
-}
+};
