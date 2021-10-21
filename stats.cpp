@@ -13,7 +13,7 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& values) {
         {
             sum = sum + values[i];
         }
-        computedStats.average = sum/vector.size();
+        computedStats.average = sum/values.size();
         computedStats.max = *std::max_element(values.begin() , values.end());
         computedStats.min = *std::min_element(values.begin() , values.end());
     }
