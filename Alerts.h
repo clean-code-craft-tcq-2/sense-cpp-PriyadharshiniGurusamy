@@ -2,8 +2,8 @@
 class IAlerter
 {
   public:
-  IAlerter();
-  ~IAlerter();
+  IAlerter(){};
+  ~IAlerter(){};
   bool emailSent;
   bool ledGlows;
 };
@@ -11,15 +11,15 @@ class IAlerter
 class EmailAlert : public IAlerter
 {
  public:
-  EmailAlert();
+  EmailAlert(){};
   ~EmailAlert();
 };
 
 class LEDAlert : public IAlerter
 {
  public:
-    LEDAlert();
-    ~LEDAlert();
+    LEDAlert(){};
+    ~LEDAlert(){};
 };
 
 class StatsAlerter 
@@ -27,7 +27,7 @@ class StatsAlerter
   public:
     /*member functions*/
     StatsAlerter(float thresholdValue, std::vector<IAlerter*> alerters);
-    ~StatsAlerter();
+    ~StatsAlerter(){};
     void checkAndAlert(const std::vector<float>& values);
     
   private:
