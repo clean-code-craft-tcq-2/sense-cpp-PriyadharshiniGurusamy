@@ -8,7 +8,7 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& values) {
     if(!values.empty())
     {
         float sum = 0;
-        std::vector<float>::iterator iter = values.begin();
+        auto iter = values.begin();
         for (int i = 0;iter != values.end(); iter++)
         {
             sum = sum + values[i];
