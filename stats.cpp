@@ -9,9 +9,9 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& values) {
     {
         float sum = 0;
         auto iter = values.begin();
-        for (int i = 0;iter != values.end(); iter++)
+        for (;iter != values.end(); iter++)
         {
-            sum = sum + values[i];
+            sum = sum + *iter;
         }
         computedStats.average = sum/values.size();
         computedStats.max = *std::max_element(values.begin() , values.end());
