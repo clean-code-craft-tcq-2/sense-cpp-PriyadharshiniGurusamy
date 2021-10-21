@@ -6,7 +6,7 @@ StatsAlerter::StatsAlerter(float thresholdValue, std::vector<IAlerter*> alerters
   alerts = alerters;
 }
 
-StatsAlerter::checkAndAlert(const std::vector<float>& values)
+void StatsAlerter::checkAndAlert(const std::vector<float>& values)
 {
   if(*std::max_element(values.begin(),values.end()) > threshold)
   {
