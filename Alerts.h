@@ -4,6 +4,8 @@ class IAlerter
   public:
   IAlerter();
   ~IAlerter();
+  bool emailSent;
+  bool ledGlows;
 };
 
 class EmailAlert : public IAlerter
@@ -11,7 +13,6 @@ class EmailAlert : public IAlerter
  public:
   EmailAlert();
   ~EmailAlert();
-  bool emailSent;
 };
 
 class LEDAlert : public IAlerter
@@ -19,7 +20,6 @@ class LEDAlert : public IAlerter
  public:
     LEDAlert();
     ~LEDAlert();
-    bool ledGlows;
 };
 
 class StatsAlerter 
