@@ -1,4 +1,5 @@
 #include "Alerts.h"
+#include "algorithm"
 
 StatsAlerter::StatsAlerter(float thresholdValue, std::vector<IAlerter*> alerters)
 {
