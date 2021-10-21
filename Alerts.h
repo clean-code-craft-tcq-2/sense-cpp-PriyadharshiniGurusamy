@@ -12,7 +12,7 @@ class EmailAlert : public IAlerter
 {
  public:
   EmailAlert(){};
-  ~EmailAlert();
+  ~EmailAlert(){};
 };
 
 class LEDAlert : public IAlerter
